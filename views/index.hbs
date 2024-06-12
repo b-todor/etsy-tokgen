@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+  <div style="width: 600px; padding: 20px; border: 1px solid black">
+    <a href="http://localhost:3003/connect">
+      Connect to Etsy
+    </a>
+  </div>
+  <div style="width: 1080px; padding: 20px; border: 1px solid black; margin-top: 8px;">
+    <form method="POST" action="/refresh">
+      <label for="ref">Refresh Token</label>
+      <input type="text" style="width: 800px; padding: 8px;" id="ref" name="ref" placeholder="Enter Refresh Token" />
+      <button type="submit" style="padding: 8px;">Refresh</button>
+    </form>
+    <div style="margin-top: 24px;">
+      Access Token: {{access_token}}
+    </div>
+  </div>
+</div>
+</body>
+</html>
